@@ -1,4 +1,5 @@
 const amqp = require("amqplib");
+require("dotenv").config();
 
 const sendTestMessage = async () => {
   try {
@@ -10,7 +11,7 @@ const sendTestMessage = async () => {
     const message = JSON.stringify({
       identifier: `fcm-msg-${random}`,
       type: "device",
-      deviceId: process.env.FCM_TOKEN,
+      deviceId: process.env.FIREBASE_FCM_TOKEN, // you need copy-paste this from https://fcm-generator.netlify.app/
       text: "This is example message - " + random,
     });
 

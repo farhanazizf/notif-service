@@ -1,4 +1,8 @@
 const admin = require("firebase-admin");
+require("dotenv").config();
+
+// READ: use this if want via import file
+// const serviceAccount = require("./serviceAccountKey.json"); // Update with your Firebase service account JSON
 
 const serviceAccount = {
   type: process.env.FIREBASE_TYPE,

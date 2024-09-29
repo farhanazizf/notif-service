@@ -1,6 +1,6 @@
 const admin = require("../config/firebase");
 const FCMJob = require("../models/fcm");
-const { publishResultToRabbitMQ } = require("./publisherService"); // Import fungsi publish
+const { publishResultToRabbitMQ } = require("./publisherService");
 
 const sendNotification = async (message) => {
   try {
