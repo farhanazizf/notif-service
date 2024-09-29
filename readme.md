@@ -24,7 +24,7 @@ Create a `.env` file in the root of the project with the following configuration
 - Download this attached [drive here](https://drive.google.com/drive/folders/19jvnYxLLYssO-RzIUetLB13H7O0cz2Be?usp=sharing)
   and paste it on your `.env`
 - Modify DB auth as your local enviroment config
-- Open [this website](https://fcm-generator.netlify.app/) to get FCM token/deviceId for running test script
+- Open [this website](https://fcm-generator.netlify.app/) to get FCM token/deviceId for running test script, don't forget you have to **allow notifications** for generate FCM token
 
 ```bash
 # Database Configuration
